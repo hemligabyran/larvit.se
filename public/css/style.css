@@ -1,0 +1,147 @@
+/* header variables */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+a.light {
+  color: #eee;
+  text-decoration: none;
+}
+
+a.light:hover {
+  color: #fff;
+}
+
+*.light {
+  color: #eee;
+}
+
+p {
+  margin: calc(5px + 0.5vw) 0 calc(10px + 2vw) 0;
+}
+
+body {
+  font: calc(10px + 0.4vw) "Raleway", sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body section#header {
+  width: 100vw;
+  background-color: #222;
+  height: calc(40px + 1.66vw);
+  position: fixed;
+}
+body section#header img.logo {
+  float: left;
+  height: calc(40px + 1.16vw);
+  width: calc(40px + 1.16vw);
+  padding: 0.25vw 1.5vw;
+}
+body section#header nav {
+  float: right;
+}
+body section#header nav ul {
+  padding: 0 2vw;
+}
+body section#header nav ul li {
+  display: inline-block;
+  height: calc(40px + 1.66vw);
+  line-height: calc(40px + 1.66vw);
+}
+body section#header nav ul li a {
+  color: #eee;
+  display: block;
+  padding: 0 1vw;
+}
+body section#header nav ul li a:hover {
+  background-color: #333;
+}
+body section.content div.cover {
+  background-image: url("../images/cover-hd.jpg");
+  transform: translate3d(0px, 0px, 0px);
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+body section.content div.cover div.cover-headline {
+  background-image: url("../images/larvit.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70vw;
+  height: calc(120px + 12vw);
+}
+body section.content div.cover div.cover-headline h1 {
+  color: #fff;
+  font-size: calc(15px + 3vw);
+  margin-left: calc(120px + 12vw);
+  margin-top: 4.1vw;
+  letter-spacing: 0.2vw;
+}
+body section.content div.cover div.cover-arrow {
+  color: #eee;
+  position: absolute;
+  bottom: 4vw;
+  left: 20vw;
+  font-size: calc(15px + 3vw);
+}
+body section.content div.content-two,
+body section.content div.content-three,
+body section.content div.content-presentation {
+  padding: 5vw 15vw;
+}
+body section.content div.content-two h2,
+body section.content div.content-three h2,
+body section.content div.content-presentation h2 {
+  font-size: calc(10px + 2.2vw);
+}
+body section.content div.content-two p,
+body section.content div.content-three p,
+body section.content div.content-presentation p {
+  font-size: calc(12px + 0.7vw);
+}
+body section.content div.content-two {
+  background-color: #e79a10;
+}
+body section.content div.content-three {
+  background-color: #444;
+}
+body section.content div.content-presentation:first-child {
+  padding-top: 10vw;
+}
+body section.content div.content-presentation:nth-child(odd) {
+  background-color: #444;
+}
+body section.content div.content-presentation:nth-child(even) {
+  background-color: #ddd;
+}
+body footer {
+  background-color: #fff;
+  padding: 3vw 1.5vw;
+}
+body footer p {
+  margin: 0;
+  text-align: center;
+  font-size: calc(12px + 0.7vw);
+}
