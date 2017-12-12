@@ -26,6 +26,12 @@ a.light:hover {
   color: #eee;
 }
 
+.clearfix {
+  width: 100;
+  clear: both;
+  display: block;
+}
+
 p {
   margin: calc(5px + 0.5vw) 0 calc(10px + 2vw) 0;
 }
@@ -40,13 +46,13 @@ body {
 body section#header {
   width: 100vw;
   background-color: #222;
-  height: calc(40px + 1.66vw);
+  height: calc(60px + 1.13vw);
   position: fixed;
 }
 body section#header img.logo {
   float: left;
-  height: calc(40px + 1.16vw);
-  width: calc(40px + 1.16vw);
+  height: calc(60px + 0.55vw);
+  width: calc(60px + 0.55vw);
   padding: 0.25vw 1.5vw;
 }
 body section#header nav {
@@ -57,19 +63,20 @@ body section#header nav ul {
 }
 body section#header nav ul li {
   display: inline-block;
-  height: calc(40px + 1.66vw);
-  line-height: calc(40px + 1.66vw);
+  height: calc(60px + 1.13vw);
+  line-height: calc(60px + 1.13vw);
 }
 body section#header nav ul li a {
   color: #eee;
   display: block;
   padding: 0 1vw;
+  font-size: calc(10px + 0.5vw);
 }
 body section#header nav ul li a:hover {
   background-color: #333;
 }
 body section.content div.cover {
-  background-image: url("../images/cover-hd.jpg");
+  background-image: url("/images/cover-hd.jpg");
   transform: translate3d(0px, 0px, 0px);
   background-position: top center;
   background-size: cover;
@@ -106,18 +113,38 @@ body section.content div.cover div.cover-arrow {
   left: 20vw;
   font-size: calc(15px + 3vw);
 }
+body section.content div.cover.who {
+  background-image: url("/images/jobscover.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  height: 70%;
+}
+body section.content div.cover.who div.cover-headline {
+  background-image: none;
+  top: initial;
+  bottom: 7vw;
+  height: calc(20px + 4vw);
+}
+body section.content div.cover.who div.cover-headline h1 {
+  margin: auto;
+  text-align: center;
+}
 body section.content div.content-two,
 body section.content div.content-three,
+body section.content div.content-four,
 body section.content div.content-presentation {
   padding: 5vw 15vw;
 }
 body section.content div.content-two h2,
 body section.content div.content-three h2,
+body section.content div.content-four h2,
 body section.content div.content-presentation h2 {
   font-size: calc(10px + 2.2vw);
 }
 body section.content div.content-two p,
 body section.content div.content-three p,
+body section.content div.content-four p,
 body section.content div.content-presentation p {
   font-size: calc(12px + 0.7vw);
 }
@@ -127,13 +154,22 @@ body section.content div.content-two {
 body section.content div.content-three {
   background-color: #444;
 }
+body section.content div.content-four {
+  background-color: #ddd;
+}
+body section.content div.content-presentation img.profile {
+  float: left;
+  margin-right: calc(10px + 1.5vw);
+  margin-bottom: calc(7px + 0.9vw);
+  width: calc(100px + 25vw);
+}
 body section.content div.content-presentation:first-child {
   padding-top: 10vw;
 }
-body section.content div.content-presentation:nth-child(odd) {
+body section.content div.content-presentation:nth-child(even) {
   background-color: #444;
 }
-body section.content div.content-presentation:nth-child(even) {
+body section.content div.content-presentation:nth-child(odd) {
   background-color: #ddd;
 }
 body footer {

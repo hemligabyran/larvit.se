@@ -8,8 +8,8 @@ $light-link-color:	#eee;
 $light-hover-link-color:	#fff;
 
 /* header variables */
-$header-heigt:	calc(40px + 1.66vw);
-$logo-size:	calc(40px + 1.16vw);
+$header-heigt:	calc(60px + 1.13vw);
+$logo-size:	calc(60px + 0.55vw);
 
 * {
 	margin:	0;
@@ -35,6 +35,12 @@ a.light:hover {
 
 *.light {
 	color:	$light-link-color;
+}
+
+.clearfix {
+	width: 100;
+	clear: both;
+	display: block;
 }
 
 p {
@@ -76,6 +82,7 @@ body {
 						color:	$light-link-color;
 						display:	block;
 						padding:	0 1vw;
+						font-size: calc(10px + 0.5vw);
 					}
 
 					a:hover {
@@ -88,7 +95,7 @@ body {
 
 	section.content {
 		div.cover {
-			background-image:	url('../images/cover-hd.jpg');
+			background-image:	url('/images/cover-hd.jpg');
 			transform:	translate3d(0px, 0px, 0px);
 			background-position:	top center;
 			background-size:	cover;
@@ -129,8 +136,29 @@ body {
 			}
 		}
 
+		div.cover.who {
+			background-image:	url('/images/jobscover.jpg');
+			background-position:	bottom center;
+			background-repeat:	no-repeat;
+			background-size:	initial;
+			height:	70%;
+
+			div.cover-headline {
+				background-image: none;
+				top: initial;
+				bottom: 7vw;
+				height: calc(20px + 4vw);
+
+				h1 {
+					margin: auto;
+					text-align: center;
+				}
+			}
+		}
+
 		div.content-two,
 		div.content-three,
+		div.content-four,
 		div.content-presentation {
 			padding:	5vw 15vw;
 
@@ -151,15 +179,28 @@ body {
 			background-color:	#444;
 		}
 
+		div.content-four {
+			background-color:	#ddd;
+		}
+
+		div.content-presentation {
+			img.profile {
+				float: left;
+				margin-right: calc(10px + 1.5vw);
+				margin-bottom: calc(7px + 0.9vw);
+				width: calc(100px + 25vw);
+			}
+		}
+
 		div.content-presentation:first-child {
 			padding-top:	10vw;
 		}
 
-		div.content-presentation:nth-child(odd) {
+		div.content-presentation:nth-child(even) {
 			background-color:	#444;
 		}
 
-		div.content-presentation:nth-child(even) {
+		div.content-presentation:nth-child(odd) {
 			background-color:	#ddd;
 		}
 	}
