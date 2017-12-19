@@ -9,7 +9,7 @@ let options	= {};
 
 options.server = {
 	'host':        '0.0.0.0',
-	'port':        8001,
+	'port':        80,
 	'pubFilePath': './public',
 	'customRoutes': [{
 		'regex': '^/$', // Regexp to be matched for the given URL
